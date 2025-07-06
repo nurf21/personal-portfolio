@@ -50,7 +50,7 @@ function initFormSubmission() {
       const message = document.getElementById('message').value;
 
       if (name && email && message) {
-        // In a real app, you would send the form data to a server
+        // In a real app, send the form data to a server
         alert('Thank you for your message! I will get back to you soon.');
         contactForm.reset();
       } else {
