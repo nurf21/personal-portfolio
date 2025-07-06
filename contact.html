@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Frontend Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Your Name</a>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="articles.html"><i class="fas fa-newspaper"></i> Articles</a></li>
+        <li><a href="#" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Get In Touch</h1>
+      <p>Have a project in mind or want to discuss opportunities? Feel free to reach out!</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>I'm currently available for freelance work and full-time positions. If you have a project that you want to
+          get started, think you need my help with something, or just want to say hello, then get in touch.</p>
+
+        <ul class="contact-methods">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Your City, Somewhere</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:yourname@example.com">yourname@example.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:+11234567890">+1 (123) 456-7890</a>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <div class="contact-details">
+              <h3>Working Hours</h3>
+              <p>Monday - Friday: 9AM - 5PM</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="social-contact">
+          <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com" target="_blank""><i class=" fab fa-linkedin-in"></i></a>
+          <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Me a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required placeholder="How can I help you?"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">© all rights reserved 2025</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
