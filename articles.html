@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles | Frontend Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Your Name</a>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="articles.html" class="active"><i class="fas fa-newspaper"></i> Articles</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Articles & Writings</h1>
+      <p>Explore insights on web development, modern technologies, and best practices in frontend development.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="articles-container">
+      <div class="articles-content">
+        <div class="articles-grid">
+          <!-- Article 1 -->
+          <div class="article-card">
+            <div class="article-image">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="article-content">
+              <h3>Understanding Semantic HTML</h3>
+              <div class="article-meta">
+                <span><i class="far fa-calendar"></i> July 15, 2025</span>
+                <span><i class="far fa-clock"></i> 5 min read</span>
+              </div>
+              <p>Learn how to structure HTML documents semantically to improve accessibility and SEO. This article
+                covers HTML5 semantic elements and best practices.</p>
+              <div class="article-tags">
+                <span class="tag-pill">HTML5</span>
+                <span class="tag-pill">Accessibility</span>
+                <span class="tag-pill">SEO</span>
+              </div>
+              <a href="https://roadmap.sh" target="_blank" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="article-card">
+            <div class="article-image">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="article-content">
+              <h3>CSS Flexbox vs Grid</h3>
+              <div class="article-meta">
+                <span><i class="far fa-calendar"></i> July 10, 2025</span>
+                <span><i class="far fa-clock"></i> 8 min read</span>
+              </div>
+              <p>A comprehensive comparison between Flexbox and Grid layout systems. Learn when to use each technique
+                and how to combine them for responsive layouts.</p>
+              <div class="article-tags">
+                <span class="tag-pill">CSS</span>
+                <span class="tag-pill">Flexbox</span>
+                <span class="tag-pill">Grid</span>
+              </div>
+              <a href="https://roadmap.sh" target="_blank" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="article-card">
+            <div class="article-image">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="article-content">
+              <h3>JavaScript Best Practices</h3>
+              <div class="article-meta">
+                <span><i class="far fa-calendar"></i> July 5, 2025</span>
+                <span><i class="far fa-clock"></i> 10 min read</span>
+              </div>
+              <p>Essential tips and techniques for writing clean, efficient JavaScript code. Learn about design
+                patterns, memory management, and performance optimization.</p>
+              <div class="article-tags">
+                <span class="tag-pill">JavaScript</span>
+                <span class="tag-pill">Performance</span>
+                <span class="tag-pill">Best Practices</span>
+              </div>
+              <a href="https://roadmap.sh" target="_blank" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <!-- Article 4 -->
+          <div class="article-card">
+            <div class="article-image">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="article-content">
+              <h3>Responsive Design in 2025</h3>
+              <div class="article-meta">
+                <span><i class="far fa-calendar"></i> June 28, 2025</span>
+                <span><i class="far fa-clock"></i> 7 min read</span>
+              </div>
+              <p>The evolution of responsive design and current trends for creating optimal user experiences across
+                devices. Learn modern techniques with CSS container queries.</p>
+              <div class="article-tags">
+                <span class="tag-pill">Responsive</span>
+                <span class="tag-pill">CSS</span>
+                <span class="tag-pill">UI/UX</span>
+              </div>
+              <a href="https://roadmap.sh" target="_blank" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="article-card">
+            <div class="article-image">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="article-content">
+              <h3>State Management in React</h3>
+              <div class="article-meta">
+                <span><i class="far fa-calendar"></i> June 20, 2025</span>
+                <span><i class="far fa-clock"></i> 12 min read</span>
+              </div>
+              <p>Exploring various state management approaches in React applications, from useState to Redux Toolkit and
+                Context API. Find the best solution for your project.</p>
+              <div class="article-tags">
+                <span class="tag-pill">React</span>
+                <span class="tag-pill">State Management</span>
+                <span class="tag-pill">Redux</span>
+              </div>
+              <a href="https://roadmap.sh" target="_blank" class="read-more">Read More</a>
+            </div>
+          </div>
+
+          <!-- Article 6 -->
+          <div class="article-card">
+            <div class="article-image">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="article-content">
+              <h3>Website Performance Optimization</h3>
+              <div class="article-meta">
+                <span><i class="far fa-calendar"></i> June 12, 2025</span>
+                <span><i class="far fa-clock"></i> 9 min read</span>
+              </div>
+              <p>Advanced techniques to improve website speed and performance. Learn about lazy loading, code splitting,
+                strategic caching, and performance measurement tools.</p>
+              <div class="article-tags">
+                <span class="tag-pill">Performance</span>
+                <span class="tag-pill">Optimization</span>
+                <span class="tag-pill">Web Vitals</span>
+              </div>
+              <a href="https://roadmap.sh" target="_blank" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="popular-articles">
+          <h3>Popular Articles</h3>
+          <ul class="popular-list">
+            <li>
+              <a href="https://roadmap.sh" target="_blank">
+                <div class="article-meta">
+                  <span><i class="far fa-eye"></i> 1.2k views</span>
+                </div>
+                <h4>10 CSS Tips for Beginner Developers</h4>
+              </a>
+            </li>
+            <li>
+              <a href="https://roadmap.sh" target="_blank">
+                <div class="article-meta">
+                  <span><i class="far fa-eye"></i> 980 views</span>
+                </div>
+                <h4>Mastering Async/Await in JavaScript</h4>
+              </a>
+            </li>
+            <li>
+              <a href="https://roadmap.sh" target="_blank">
+                <div class="article-meta">
+                  <span><i class="far fa-eye"></i> 850 views</span>
+                </div>
+                <h4>Building an Impressive Portfolio</h4>
+              </a>
+            </li>
+            <li>
+              <a href="https://roadmap.sh" target="_blank">
+                <div class="article-meta">
+                  <span><i class="far fa-eye"></i> 720 views</span>
+                </div>
+                <h4>Dark Mode Implementation Guide</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="newsletter" style="margin-top: 40px;">
+          <h3>Subscribe to Articles</h3>
+          <p style="margin-bottom: 15px;">Get the latest articles delivered directly to your email.</p>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Your email address">
+          </div>
+          <a href="#" class="read-more" style="display: block; text-align: center; margin-top: 10px;">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p class="copyright">© all rights reserved 2025</p>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
